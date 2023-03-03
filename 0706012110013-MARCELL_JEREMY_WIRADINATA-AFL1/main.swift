@@ -15,6 +15,7 @@ while(mainMenuChoice != "Q"){
     printGreetingPage()
     
     mainMenuChoice = readLine()!
+    
     while(!mainMenuChoice.isNumber && !mainMenuChoice.isValidInput ){
         print("Invalid input, please try again ", terminator: "")
         mainMenuChoice = readLine()!
@@ -22,9 +23,14 @@ while(mainMenuChoice != "Q"){
     
     
     if(mainMenuChoice.isNumber){
-        let validOption = Int(mainMenuChoice) ?? -1 < 8
+        
+        let choiceAsNumber = Int(mainMenuChoice) ?? -1
+        let validOption = choiceAsNumber < 8 && choiceAsNumber != -1
+        
         if(validOption){
             // function to return the right action.
+        } else if(choiceAsNumber == -1) {
+            print("An Error Occured - Conversion failed")
         } else {
             print("Option doesn not exist")
         }
