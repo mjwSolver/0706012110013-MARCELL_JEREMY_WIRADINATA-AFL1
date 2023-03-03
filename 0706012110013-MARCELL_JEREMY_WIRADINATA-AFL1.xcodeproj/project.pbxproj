@@ -7,7 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0438164B29B1836B004CEF59 /* extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0438164A29B1836B004CEF59 /* extension.swift */; };
+		0438164E29B19940004CEF59 /* prints.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0438164D29B19940004CEF59 /* prints.swift */; };
 		04CBC1D729AD9F200063A981 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04CBC1D629AD9F200063A981 /* main.swift */; };
+		04CBC1E229ADA5CC0063A981 /* stores.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04CBC1E129ADA5CC0063A981 /* stores.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -23,8 +26,11 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		0438164A29B1836B004CEF59 /* extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = extension.swift; sourceTree = "<group>"; };
+		0438164D29B19940004CEF59 /* prints.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = prints.swift; sourceTree = "<group>"; };
 		04CBC1D329AD9F200063A981 /* 0706012110013-MARCELL_JEREMY_WIRADINATA-AFL1 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "0706012110013-MARCELL_JEREMY_WIRADINATA-AFL1"; sourceTree = BUILT_PRODUCTS_DIR; };
 		04CBC1D629AD9F200063A981 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		04CBC1E129ADA5CC0063A981 /* stores.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = stores.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -38,6 +44,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0438164929B1811E004CEF59 /* extension */ = {
+			isa = PBXGroup;
+			children = (
+				0438164A29B1836B004CEF59 /* extension.swift */,
+			);
+			path = extension;
+			sourceTree = "<group>";
+		};
+		0438164C29B1992F004CEF59 /* prints */ = {
+			isa = PBXGroup;
+			children = (
+				0438164D29B19940004CEF59 /* prints.swift */,
+			);
+			path = prints;
+			sourceTree = "<group>";
+		};
 		04CBC1CA29AD9F200063A981 = {
 			isa = PBXGroup;
 			children = (
@@ -57,9 +79,20 @@
 		04CBC1D529AD9F200063A981 /* 0706012110013-MARCELL_JEREMY_WIRADINATA-AFL1 */ = {
 			isa = PBXGroup;
 			children = (
+				0438164C29B1992F004CEF59 /* prints */,
+				0438164929B1811E004CEF59 /* extension */,
+				04CBC1DE29ADA4460063A981 /* struct */,
 				04CBC1D629AD9F200063A981 /* main.swift */,
 			);
 			path = "0706012110013-MARCELL_JEREMY_WIRADINATA-AFL1";
+			sourceTree = "<group>";
+		};
+		04CBC1DE29ADA4460063A981 /* struct */ = {
+			isa = PBXGroup;
+			children = (
+				04CBC1E129ADA5CC0063A981 /* stores.swift */,
+			);
+			path = struct;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -120,7 +153,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0438164B29B1836B004CEF59 /* extension.swift in Sources */,
 				04CBC1D729AD9F200063A981 /* main.swift in Sources */,
+				04CBC1E229ADA5CC0063A981 /* stores.swift in Sources */,
+				0438164E29B19940004CEF59 /* prints.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
