@@ -75,7 +75,7 @@ fileprivate func printGreetingPage(){
 
 
 fileprivate func printStores() {
-    let theStores = THESTORES
+    let theStores = THE_STORES
     
     for (index, store) in theStores.enumerated() {
         print("[\(index+1)] \(store)")
