@@ -12,8 +12,12 @@ extension String {
         let digitsCharacters = CharacterSet(charactersIn: "0123456789")
         return CharacterSet(charactersIn: self).isSubset(of: digitsCharacters)
     }
-    var isValidInput: Bool {
+    var isValidMenuInput: Bool {
         let validInputs = CharacterSet(charactersIn: "QqSs")
+        return CharacterSet(charactersIn: self).isSubset(of: validInputs)
+    }
+    var bIsValidInput: Bool {
+        let validInputs = CharacterSet(charactersIn: "Bb")
         return CharacterSet(charactersIn: self).isSubset(of: validInputs)
     }
 }
