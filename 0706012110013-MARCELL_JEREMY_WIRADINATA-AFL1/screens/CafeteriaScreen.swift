@@ -7,9 +7,11 @@
 
 import Foundation
 
-func CafeteriaScreen(cafeteria: Int){
+func CafeteriaScreen(cafeteriaIndex: Int){
     var cafeteriaChoice = "blank"
     while(cafeteriaChoice != "BACK"){
+        
+        var theSet: Set<String> = STORE_AND_MENU[THE_STORES[cafeteriaIndex]] ?? ["Error"]
         
         print(
             """
@@ -18,7 +20,7 @@ func CafeteriaScreen(cafeteria: Int){
             """
         )
             
-        printCafeteriaMenu(cafeteriaMenus: ["Something 1", "Something 2", "Something 3", "Something 4"])
+        printCafeteriaMenu(cafeteriaMenus: theSet)
         
         print(
             """
@@ -42,7 +44,7 @@ func CafeteriaScreen(cafeteria: Int){
     }
 }
 
-func printCafeteriaMenu(cafeteriaMenus: [String]){
+func printCafeteriaMenu(cafeteriaMenus: Set<String>){
     for (index, cafeteriaMenu) in cafeteriaMenus.enumerated() {
         print(
             "[\(index+1)] \(cafeteriaMenu) "
