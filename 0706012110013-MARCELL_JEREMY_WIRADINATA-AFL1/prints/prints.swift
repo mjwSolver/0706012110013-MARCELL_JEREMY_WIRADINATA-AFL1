@@ -20,7 +20,7 @@ func printGreetingPage(){
     [S]hopping Cart
     [Q]uit
     Your cafeteria of choice?
-    """
+    """, terminator: " "
     )
 }
 

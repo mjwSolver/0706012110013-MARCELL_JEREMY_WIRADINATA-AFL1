@@ -7,6 +7,10 @@
 
 import Foundation
 
+func MainMenuScreen(){
+    
+}
+
 var mainMenuChoice = ""
 
 while(mainMenuChoice != "Q"){
@@ -17,7 +21,7 @@ while(mainMenuChoice != "Q"){
     mainMenuChoice = readLine()!
     
     while(!mainMenuChoice.isNumber && !mainMenuChoice.isValidInput ){
-        print("Invalid input, please try again ", terminator: "")
+        print("Invalid input, please try again ", terminator: " ")
         mainMenuChoice = readLine()!
     }
     
@@ -38,9 +42,9 @@ while(mainMenuChoice != "Q"){
     } else {
         
         switch mainMenuChoice.lowercased() {
-        case "q" : print("for Quiting")
-        case "s": print("for Shopping Cart")
-        default: print("I don't know what to do with that input")
+        case "q" : mainMenuChoice = "Q"
+        case "s": ShoppingCartScreen()
+        default: print("\n I don't know what to do with that input \n")
         }
         
     }
@@ -53,6 +57,16 @@ while(mainMenuChoice != "Q"){
     // in range, then execute one function, takes in as integer
     
 }
+
+func ShoppingCartScreen(){
+    var shopingChoice = "blank"
+    while(shopingChoice != "BACK"){
+        
+        print("Hey There")
+        shopingChoice = "BACK"
+    }
+}
+
 
 
 
