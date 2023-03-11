@@ -7,6 +7,11 @@
 
 import Foundation
 
+// Shopping Cart
+
+var shoppingCart: [[String : String]:Int] = [:]
+
+// Stores and Menu
 
 let THE_STORES = [
     "Tuku-Tuku", "XiangJia", "Raburi" ,"Gotri", "Madam Lie", "E&W Sandwich", "GI Joe", "Kopte"
@@ -55,6 +60,18 @@ let EW_SANDWICH: Set<String> = [
 
 let GI_JOE: Set<String> = [
     "Donut Sprinkles", "Coffee Biasa Aja", "Americano", "Deep Latte",
-    "Matcha Mix Tea", "Puffy Cupcake", ""
+    "Matcha Mix Tea", "Puffy Cupcake", "Coffee GI Special", "Chocolate Donuts"
 ]
 let KOPTE: Set<String> = ["Food"]
+
+// Dictionary for each of the menu item it holds
+// the name
+// the price
+
+// what about the users shopping cart?
+// stores the food
+// stores the quantity
+// stores the store orgin?
+// mini brain - empty, but takes in:
+// - Store Name
+// Value is the object name and quantity
