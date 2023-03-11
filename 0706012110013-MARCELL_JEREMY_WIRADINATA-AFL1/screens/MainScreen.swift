@@ -27,7 +27,7 @@ func MainMenuScreen(){
         if(mainMenuChoice.isNumber){
             
             let choiceAsNumber = Int(mainMenuChoice) ?? -1
-            let validOption = choiceAsNumber < 8 && choiceAsNumber != -1
+            let validOption = choiceAsNumber < THE_STORES.count && choiceAsNumber != -1
             
             if(validOption){
                 CafeteriaScreen(cafeteriaIndex: choiceAsNumber)
