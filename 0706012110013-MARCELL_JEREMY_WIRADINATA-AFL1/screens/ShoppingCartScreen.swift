@@ -11,7 +11,15 @@ func ShoppingCartScreen(){
     var shopingChoice = "blank"
     while(shopingChoice != "BACK"){
         
-        print("Hey There")
+        print("Your cart is Empty")
         shopingChoice = "BACK"
+        
+        print("Your Order from 'Store'")
+        print("- 'Name of product' x'amount'")
+        
+        // Able to list out the orders
+        // - quantity
+        // - store of origin
+        
     }
 }
