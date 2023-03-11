@@ -20,4 +20,8 @@ extension String {
         let validInputs = CharacterSet(charactersIn: "Bb")
         return CharacterSet(charactersIn: self).isSubset(of: validInputs)
     }
+    var bpIsValidInput: Bool {
+        let validInputs = CharacterSet(charactersIn: "BbPp")
+        return CharacterSet(charactersIn: self).isSubset(of: validInputs)
+    }
 }

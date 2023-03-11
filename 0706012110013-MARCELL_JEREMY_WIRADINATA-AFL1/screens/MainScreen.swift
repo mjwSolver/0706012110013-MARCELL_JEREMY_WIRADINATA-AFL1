@@ -9,20 +9,19 @@ import Foundation
 
 func MainMenuScreen(){
     
-    var mainMenuChoice = ""
+    var mainMenuChoice: String? = ""
     
     while(mainMenuChoice != "Q"){
         
         // Welcome to UC Cafeteria ....
         printGreetingPage()
         
-        mainMenuChoice = readLine()!
+        mainMenuChoice = readLine()
         
-        while(!mainMenuChoice.isNumber && !mainMenuChoice.isValidMenuInput ){
+        guard let mainMenuChoice = mainMenuChoice else {
             print("Invalid input, please try again ", terminator: " ")
-            mainMenuChoice = readLine()!
+            continue
         }
-        
         
         if(mainMenuChoice.isNumber){
             
@@ -39,7 +38,7 @@ func MainMenuScreen(){
             
         } else {
             
-            switch mainMenuChoice.lowercased() {
+            switch mainMenuChoice?.lowercased() {
             case "q" : mainMenuChoice = "Q"
             case "s": ShoppingCartScreen()
             default: print("\n I don't know what to do with that input \n")
