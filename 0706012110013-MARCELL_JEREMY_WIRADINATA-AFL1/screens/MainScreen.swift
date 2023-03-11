@@ -30,7 +30,7 @@ func MainMenuScreen(){
             let validOption = choiceAsNumber < 8 && choiceAsNumber != -1
             
             if(validOption){
-                // function to return the right action.
+                CafeteriaScreen(cafeteriaIndex: choiceAsNumber)
             } else if(choiceAsNumber == -1) {
                 print("An Error Occured - Conversion failed")
             } else {
