@@ -11,7 +11,7 @@ func MainMenuScreen(){
     
     var mainMenuChoice: String? = ""
     
-    while(mainMenuChoice != "Q"){
+    while(true){
         
         // Welcome to UC Cafeteria ....
         printGreetingPage()
@@ -38,8 +38,8 @@ func MainMenuScreen(){
             
         } else {
             
-            switch mainMenuChoice?.lowercased() {
-            case "q" : mainMenuChoice = "Q"
+            switch mainMenuChoice.lowercased() {
+            case "q" : break
             case "s": ShoppingCartScreen()
             default: print("\n I don't know what to do with that input \n")
             }
