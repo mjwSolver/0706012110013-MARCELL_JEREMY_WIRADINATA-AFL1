@@ -29,7 +29,7 @@ func MainMenuScreen(){
             let validOption = choiceAsNumber < THE_STORES.count && choiceAsNumber != -1
             
             if(validOption){
-                CafeteriaScreen(cafeteriaIndex: choiceAsNumber)
+                CafeteriaScreen(cafeteriaIndex: choiceAsNumber - 1)
             } else if(choiceAsNumber == -1) {
                 print("An Error Occured - Conversion failed")
             } else {
