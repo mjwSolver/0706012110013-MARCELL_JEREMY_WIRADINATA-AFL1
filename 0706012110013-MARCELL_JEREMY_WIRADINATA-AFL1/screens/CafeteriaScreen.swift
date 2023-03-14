@@ -36,7 +36,7 @@ func CafeteriaScreen(cafeteriaIndex: Int){
     
     var cafeteriaChoice: String? = "blank"
         
-    while(true){
+    outerloop: while(true){
         
         print(
             """
@@ -69,8 +69,7 @@ func CafeteriaScreen(cafeteriaIndex: Int){
         } else if(cafeteriaChoice.bIsValidInput) {
             switch cafeteriaChoice.lowercased() {
                 case "b":
-                    print("Breaking")
-                    break
+                    break outerloop
                 default: continue
             }
         }
