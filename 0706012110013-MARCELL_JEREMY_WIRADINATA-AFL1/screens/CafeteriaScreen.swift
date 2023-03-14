@@ -7,19 +7,40 @@
 
 import Foundation
 
+func getMenuOf(theStore theStoreIndex:Int) -> [String: Int] {
+    
+    // Filtering the all the menus based on value
+    let anotherCafeteriaMenu = THE_MENU.filter{ $0.value == THE_STORES[theStoreIndex] }
+    
+    // Extracting only the Keys, containing MenuItem and Price
+    let justTheMenu = Array(anotherCafeteriaMenu.keys)
+    
+    // Flattening the Dictionaries
+    let flattenedDictionary = justTheMenu
+        .flatMap { $0 }
+        .reduce( [String:Int]() ) { (dict, nextValue) in
+            var dictionary: [String:Int] = [:]
+            dictionary.updateValue(nextValue.1, forKey: nextValue.0)
+            return dict.merging(dictionary, uniquingKeysWith: { (first, _) in first })
+        }
+    
+    return flattenedDictionary
+}
+
+
+
 func CafeteriaScreen(cafeteriaIndex: Int){
     
     
-    var theCafteriaMenu: Set<String> =
-        STORE_AND_MENU[THE_STORES[cafeteriaIndex]] ?? ["No Data Found", "Please press Back", "and try again"]
+    let theCafteriaMenu: [String] = Array(getMenuOf(theStore: cafeteriaIndex).keys)
     
     var cafeteriaChoice: String? = "blank"
-    
+        
     while(true){
         
         print(
             """
-            Hi, welcome back to \(THE_STORES[cafeteriaIndex])!
+            Hi, welcome back to \(THE_STORES[cafeteriaIndex])
             What would you like to order?
             """
         )
@@ -34,7 +55,6 @@ func CafeteriaScreen(cafeteriaIndex: Int){
             """, terminator: " "
         )
         
-        print("You sure about this mate?")
         cafeteriaChoice = readLine()
         
         guard let cafeteriaChoice = cafeteriaChoice else {
@@ -45,8 +65,14 @@ func CafeteriaScreen(cafeteriaIndex: Int){
         if(cafeteriaChoice.isNumber){
             
             
-        } else {
-            break;
+            //
+        } else if(cafeteriaChoice.bIsValidInput) {
+            switch cafeteriaChoice.lowercased() {
+                case "b":
+                    print("Breaking")
+                    break
+                default: continue
+            }
         }
         
         // get the name of the store
@@ -57,11 +83,10 @@ func CafeteriaScreen(cafeteriaIndex: Int){
         
         // Error Handling inputs
         
-        
     }
 }
 
-func printCafeteriaMenu(cafeteriaMenus: Set<String>){
+func printCafeteriaMenu(cafeteriaMenus: [String]){
     for (index, cafeteriaMenu) in cafeteriaMenus.enumerated() {
         print(
             "[\(index+1)] \(cafeteriaMenu) "
