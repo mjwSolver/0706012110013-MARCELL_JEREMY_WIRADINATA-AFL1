@@ -8,18 +8,24 @@
 import Foundation
 
 func ShoppingCartScreen(){
-    var shopingChoice = "blank"
-    while(shopingChoice != "BACK"){
+    
+outerloop: while true {
         
-        print("Your cart is Empty")
-        shopingChoice = "BACK"
+//    if(1+1 == 2) {
+//        print("Your cart is Empty")
+//        break outerloop
+//    }
+
+    print("Your Order from 'Store'")
+    print("- 'Name of product' x'amount'")
         
-        print("Your Order from 'Store'")
-        print("- 'Name of product' x'amount'")
-        
-        // Able to list out the orders
-        // - quantity
-        // - store of origin
+    // Able to list out the orders
+    // - quantity
+    // - store of origin
+    
+    // Option to pay
+    // - Shows their dough
+    // - was it successful
         
     }
 }
