@@ -10,7 +10,6 @@ import Foundation
 func MainMenuScreen(){
     
     var mainMenuChoice: String? = ""
-    
     outerloop: while true {
         
         // Welcome to UC Cafeteria ....
