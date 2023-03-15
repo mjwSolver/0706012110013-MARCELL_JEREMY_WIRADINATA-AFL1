@@ -7,37 +7,22 @@
 
 import Foundation
 
-func getMenuOf(theStore theStoreIndex:Int) -> [String: Int] {
-    
-    // Filtering the all the menus based on value
-    let anotherCafeteriaMenu = THE_MENU.filter{ $0.value == THE_STORES[theStoreIndex] }
-    
-    // Extracting only the Keys, containing MenuItem and Price
-    let justTheMenu = Array(anotherCafeteriaMenu.keys)
-    
-    // Flattening the Dictionaries
-    let flattenedDictionary = justTheMenu
-        .flatMap { $0 }
-        .reduce( [String:Int]() ) { (dict, nextValue) in
-            var dictionary: [String:Int] = [:]
-            dictionary.updateValue(nextValue.1, forKey: nextValue.0)
-            return dict.merging(dictionary, uniquingKeysWith: { (first, _) in first })
-        }
-    
-    return flattenedDictionary
-}
-
-
 
 func CafeteriaScreen(cafeteriaIndex: Int){
     
     
-    let theCafteriaMenu: [String] = Array(getMenuOf(theStore: cafeteriaIndex).keys)
+    let rawCafeteria = getMenuOf(theStore: cafeteriaIndex)
+    let theCafteriaMenu: [String] = Array(rawCafeteria.keys)
     
     var cafeteriaChoice: String? = "blank"
+    
+//    print(rawCafeteria["Donat Coklat"] ?? "I can't find it")
+//    print(theCafteriaMenu[0])
+//    print(rawCafeteria[theCafteriaMenu[0]] ?? "Odd")
         
     outerloop: while(true){
         
+        print("\n")
         print(
             """
             Hi, welcome back to \(THE_STORES[cafeteriaIndex])
@@ -64,8 +49,23 @@ func CafeteriaScreen(cafeteriaIndex: Int){
                 
         if(cafeteriaChoice.isNumber){
             
+            let choiceAsNumber = Int(cafeteriaChoice) ?? -1
+            let isNumberValid = choiceAsNumber < theCafteriaMenu.count && choiceAsNumber != -1
+
+            if !isNumberValid {
+                print(" I don't know what to do with that")
+                continue
+            }
             
-            //
+            let price: Int? = rawCafeteria[theCafteriaMenu[choiceAsNumber]]
+            
+            guard let menuPrice = price else {
+                print(" Internal Error occurred")
+                continue
+            }
+            
+            OrderScreen(theMenuItemIs: theCafteriaMenu[cafeteriaIndex], chargeAt: menuPrice )
+            
         } else if(cafeteriaChoice.bIsValidInput) {
             switch cafeteriaChoice.lowercased() {
                 case "b":
@@ -91,4 +91,25 @@ func printCafeteriaMenu(cafeteriaMenus: [String]){
             "[\(index+1)] \(cafeteriaMenu) "
         )
     }
+}
+
+
+func getMenuOf(theStore theStoreIndex:Int) -> [String: Int] {
+    
+    // Filtering the all the menus based on value
+    let anotherCafeteriaMenu = THE_MENU.filter{ $0.value == THE_STORES[theStoreIndex] }
+    
+    // Extracting only the Keys, containing MenuItem and Price
+    let justTheMenu = Array(anotherCafeteriaMenu.keys)
+    
+    // Flattening the Dictionaries
+    let flattenedDictionary = justTheMenu
+        .flatMap { $0 }
+        .reduce( [String:Int]() ) { (dict, nextValue) in
+            var dictionary: [String:Int] = [:]
+            dictionary.updateValue(nextValue.1, forKey: nextValue.0)
+            return dict.merging(dictionary, uniquingKeysWith: { (first, _) in first })
+        }
+    
+    return flattenedDictionary
 }
