@@ -11,6 +11,7 @@
 		0438AFAD29C0CF0C00558588 /* OrderScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0438AFAC29C0CF0C00558588 /* OrderScreen.swift */; };
 		045FA13529BAD52D0014E0AB /* ShoppingCartScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 045FA13429BAD52D0014E0AB /* ShoppingCartScreen.swift */; };
 		045FA13729BAD56B0014E0AB /* CafeteriaScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 045FA13629BAD56B0014E0AB /* CafeteriaScreen.swift */; };
+		049E436929C1BBAC00477136 /* CheckoutScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 049E436829C1BBAC00477136 /* CheckoutScreen.swift */; };
 		04CBC1D729AD9F200063A981 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04CBC1D629AD9F200063A981 /* main.swift */; };
 		04CBC1E229ADA5CC0063A981 /* stores.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04CBC1E129ADA5CC0063A981 /* stores.swift */; };
 		04E480E629BAD3E9006F84E5 /* globals.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04E480E529BAD3E9006F84E5 /* globals.swift */; };
@@ -34,6 +35,7 @@
 		0438AFAC29C0CF0C00558588 /* OrderScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderScreen.swift; sourceTree = "<group>"; };
 		045FA13429BAD52D0014E0AB /* ShoppingCartScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShoppingCartScreen.swift; sourceTree = "<group>"; };
 		045FA13629BAD56B0014E0AB /* CafeteriaScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CafeteriaScreen.swift; sourceTree = "<group>"; };
+		049E436829C1BBAC00477136 /* CheckoutScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckoutScreen.swift; sourceTree = "<group>"; };
 		04CBC1D329AD9F200063A981 /* 0706012110013-MARCELL_JEREMY_WIRADINATA-AFL1 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "0706012110013-MARCELL_JEREMY_WIRADINATA-AFL1"; sourceTree = BUILT_PRODUCTS_DIR; };
 		04CBC1D629AD9F200063A981 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		04CBC1E129ADA5CC0063A981 /* stores.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = stores.swift; sourceTree = "<group>"; };
@@ -111,6 +113,7 @@
 				045FA13429BAD52D0014E0AB /* ShoppingCartScreen.swift */,
 				045FA13629BAD56B0014E0AB /* CafeteriaScreen.swift */,
 				0438AFAC29C0CF0C00558588 /* OrderScreen.swift */,
+				049E436829C1BBAC00477136 /* CheckoutScreen.swift */,
 			);
 			path = screens;
 			sourceTree = "<group>";
@@ -173,6 +176,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				049E436929C1BBAC00477136 /* CheckoutScreen.swift in Sources */,
 				0438AFAD29C0CF0C00558588 /* OrderScreen.swift in Sources */,
 				04E480E929BAD44F006F84E5 /* MainScreen.swift in Sources */,
 				045FA13529BAD52D0014E0AB /* ShoppingCartScreen.swift in Sources */,

@@ -57,6 +57,7 @@ func MainMenuScreen(){
 
 // Welcome to UC Cafeteria
 fileprivate func printGreetingPage(){
+    print("")
     print("""
         Welcome to UC-Walk Cafeteria, please select a cafeteria:
         
@@ -78,4 +79,10 @@ fileprivate func printStores() {
     for (index, store) in theStores.enumerated() {
         print("[\(index+1)] \(store)")
     }
+}
+
+fileprivate func printingStores(){
+    let theMenuValues = Array(THE_MENU.values)
+    let justTheStore = Set(theMenuValues)
+    print(justTheStore)
 }

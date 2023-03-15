@@ -18,6 +18,7 @@ outerloop: while true {
     print(
         """
         \(foodName) @ \(foodPrice)
+        - Press [B] to go back -
         How many \"\(foodName)\" would you like to order?
         """, terminator: " "
     )
