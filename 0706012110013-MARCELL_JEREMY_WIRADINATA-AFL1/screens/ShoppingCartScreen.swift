@@ -11,13 +11,25 @@ func ShoppingCartScreen(){
     
 outerloop: while true {
         
-//    if(1+1 == 2) {
-//        print("Your cart is Empty")
-//        break outerloop
-//    }
+    if(THE_SHOPPING_CART.isEmpty) {
+        print("")
+        print("")
+        print("Your cart is Empty")
+        break outerloop
+    }
 
-    print("Your Order from 'Store'")
-    print("- 'Name of product' x'amount'")
+    let allStores = Array(Set(THE_SHOPPING_CART.values))
+    print(allStores)
+    
+    break outerloop
+    
+//    for theStore in allStores {
+//        print("Your Order from \(theStore)")
+//        print("- 'Name of product' x'amount'")
+//    }
+    
+//    let anotherCafeteriaMenu = THE_MENU.filter{ $0.value == THE_STORES[theStoreIndex] }
+
         
     // Able to list out the orders
     // - quantity

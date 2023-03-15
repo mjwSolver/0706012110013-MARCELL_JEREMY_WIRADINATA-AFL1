@@ -14,6 +14,8 @@ func CafeteriaScreen(cafeteriaIndex: Int){
     let rawCafeteria = getMenuOf(theStore: cafeteriaIndex)
     let theCafteriaMenu: [String] = Array(rawCafeteria.keys)
     
+    let currentStore = THE_STORES[cafeteriaIndex]
+    
     var cafeteriaChoice: String? = "blank"
     
 //    print(rawCafeteria["Donat Coklat"] ?? "I can't find it")
@@ -25,7 +27,7 @@ func CafeteriaScreen(cafeteriaIndex: Int){
         print("\n")
         print(
             """
-            Hi, welcome back to \(THE_STORES[cafeteriaIndex])
+            Hi, welcome back to \(currentStore)
             What would you like to order?
             """
         )
@@ -57,14 +59,18 @@ func CafeteriaScreen(cafeteriaIndex: Int){
                 continue
             }
             
-            let price: Int? = rawCafeteria[theCafteriaMenu[choiceAsNumber]]
+            let price: Int? = rawCafeteria[theCafteriaMenu[choiceAsNumber-1]]
             
             guard let menuPrice = price else {
                 print(" Internal Error occurred")
                 continue
             }
             
-            OrderScreen(theMenuItemIs: theCafteriaMenu[cafeteriaIndex], chargeAt: menuPrice )
+            OrderScreen(
+                theMenuItemIs: theCafteriaMenu[choiceAsNumber-1],
+                chargeAt: menuPrice,
+                fromStore: currentStore
+            )
             
         } else if(cafeteriaChoice.bIsValidInput) {
             switch cafeteriaChoice.lowercased() {
@@ -79,7 +85,6 @@ func CafeteriaScreen(cafeteriaIndex: Int){
         // using dictionary to grab reference by named
         // store products of each store (using set)
         // print the food for each store
-        
         // Error Handling inputs
         
     }

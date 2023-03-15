@@ -17,6 +17,8 @@ let THE_STORES: [String] = [
     "Tuku-Tuku", "XiangJia", "Raburi" ,"Gotri", "Madam Lie", "E&W Sandwich", "GI Joe", "Kopte"
 ]
 
+var THE_SHOPPING_CART: [[String:Int] : String] = [:]
+
 let THE_MENU: Dictionary<[String: Int], String> = [
     ["Tahu isi": 10000] : "Tuku-Tuku" ,
     ["Nasi kuning": 12000] : "Tuku-Tuku" ,
@@ -91,57 +93,6 @@ let THE_MENU: Dictionary<[String: Int], String> = [
     ["Teh Tawar": 8000] : "Kopte",
 ]
 
-
-//let STORE_AND_MENU = [
-//    "Tuku-Tuku" : TUKU_TUKU,
-//    "XiangJia" : XIANGJIA,
-//    "Raburi" : RABURI,
-//    "Gotri" : GOTRI,
-//    "Madam Lie" : MADAM_LIE,
-//    "E&W Sandwich" : EW_SANDWICH,
-//    "GI Joe" : GI_JOE,
-//    "Kopte" : KOPTE,
-//]
-
-//let TUKU_TUKU = [
-//    "Tahu isi", "Nasi kuning",  "Nasi campur",  "Air mineral",
-//    "NU Green Tea Honey", "Nissin Cup Noodle", "Itoe Oolong Tea", "Donat Coklat"
-//]
-
-//let XIANGJIA = [
-//    "Normal Coffee", "Unusual Coffee", "Waterfall Coffee", "Raining Coffee",
-//    "Floating Coffee", "Green Noodles", "Yellow Noodles", "Blue Noodles"
-//]
-
-//let RABURI = [
-//    "Ramen Nael", "Ramen Kevin", "Ramen Rama", "Ramen Seaweed",
-//    "Nasi Katsu", "Nasi Karaage", "Nasi Telur", "Nasi Something"
-//]
-
-//let GOTRI = [
-//    "Nasi Goreng Pedas", "Nasi Lauk Gila", "Nasi Mie Instan", "Nasi Ekonomis",
-//    "Mie Goreng Kecap Asin", "Mie Ayam Jamur", "Mie Goreng Pangsit", "Mie Special"
-//]
-
-//let MADAM_LIE = [
-//    "Nasi Sayur Ayam", "Nasi Ayam Sayur", "Nasi Ayam Goreng", "Nasi Goreng Special",
-//    "Nasi Goreng + Telur", "Jus Oren", "Jus Melon", "Teh Manis", "Teh Tawar"
-//]
-
-//let EW_SANDWICH = [
-//    "American Cheese Steak", "Singaporean John Bread", "Roti Gak Jelas", "Spicy Tuna Mayo",
-//    "Spicy Thai Tom Yum Beef", "Cubano Classic", "German Curry Worst", "Vietnamese Grilled Chicken"
-//]
-
-//let GI_JOE = [
-//    "Donut Sprinkles", "Coffee Biasa Aja", "Americano", "Deep Latte",
-//    "Matcha Mix Tea", "Puffy Cupcake", "Coffee GI Special", "Chocolate Donuts"
-//]
-//let KOPTE = ["Food"]
-
-// Dictionary for each of the menu item it holds
-// the name
-// the price
 
 // what about the users shopping cart?
 // stores the food
