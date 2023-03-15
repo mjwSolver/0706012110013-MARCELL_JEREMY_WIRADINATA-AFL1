@@ -14,7 +14,7 @@ var shoppingCart: [[String : String]:Int] = [:]
 // Stores and Menu
 
 let THE_STORES: [String] = [
-    "Tuku-Tuku", "XiangJia", "Raburi" ,"Gotri", "Madam Lie", "E&W Sandwich", "GI Joe", "Kopte"
+    "Tuku-Tuku", "Xiang Jia", "Raburi" ,"Gotri", "Madam Lie", "E&W Sandwich", "GI Joe", "Kopte"
 ]
 
 var THE_SHOPPING_CART: [[String:Int] : String] = [:]
