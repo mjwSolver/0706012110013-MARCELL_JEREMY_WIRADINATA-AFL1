@@ -14,6 +14,7 @@ func OrderScreen(theMenuItemIs foodName:String, chargeAt foodPrice:Int){
     
 outerloop: while true {
     
+    print("")
     print(
         """
         \(foodName) @ \(foodPrice)
