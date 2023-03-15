@@ -28,13 +28,13 @@ let THE_MENU: Dictionary<[String: Int], String> = [
     ["Donat Coklat": 5000] : "Tuku-Tuku" ,
     
     ["Normal Coffee": 12000] : "Xiang Jia",
-    ["Unusual Coffee": 14000] : "Xiang Jia",
+    ["Kaya Toast Ori": 12000] : "Xiang Jia",
     ["Waterfall Coffee": 10000] : "Xiang Jia",
     ["Raining Coffee": 20000] : "Xiang Jia",
     ["Floating Coffee": 15000] : "Xiang Jia",
     ["Green Noodles": 25000] : "Xiang Jia",
-    ["Yellow Noodles": 27000] : "Xiang Jia",
-    ["Blue Noodles": 25000] : "Xiang Jia",
+    ["Fish Noodles": 25000] : "Xiang Jia",
+    ["Nasi Telur": 15000] : "Xiang Jia",
     
     ["Katsu Ramen": 32000] : "Raburi",
     ["Katsu Karaage": 30000] : "Raburi",
