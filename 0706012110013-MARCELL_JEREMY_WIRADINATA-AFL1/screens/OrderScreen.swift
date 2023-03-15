@@ -47,13 +47,23 @@ func OrderScreen(theMenuItemIs foodName:String, chargeAt foodPrice:Int, fromStor
             let theShoppingCart = flattenDictionary(of: THE_SHOPPING_CART)
             let itemNames = Array(theShoppingCart.keys)
     
+//            print("starting")
+//            print(THE_SHOPPING_CART as AnyObject)
+            
             var previousAmount: Int = 0
             if(itemNames.contains(foodName)){
                 // Condition guarantees the existence of this value
                 previousAmount = theShoppingCart[foodName]!
+                
+                THE_SHOPPING_CART.removeValue(forKey: [foodName:previousAmount])
+//                print("before")
+//                print(THE_SHOPPING_CART as AnyObject)
+                
             }
-            
+
             THE_SHOPPING_CART[[foodName:choiceAsNumber + previousAmount]] = storeName
+//            print("after")
+//            print(THE_SHOPPING_CART as AnyObject)
             
             break outerloop
             // Logic to check if the entry exists
