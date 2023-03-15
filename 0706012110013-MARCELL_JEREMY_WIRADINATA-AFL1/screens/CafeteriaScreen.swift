@@ -104,17 +104,7 @@ func getMenuOf(theStore theStoreIndex:Int) -> [String: Int] {
     // Filtering the all the menus based on value
     let anotherCafeteriaMenu = THE_MENU.filter{ $0.value == THE_STORES[theStoreIndex] }
     
-    // Extracting only the Keys, containing MenuItem and Price
-    let justTheMenu = Array(anotherCafeteriaMenu.keys)
-    
-    // Flattening the Dictionaries
-    let flattenedDictionary = justTheMenu
-        .flatMap { $0 }
-        .reduce( [String:Int]() ) { (dict, nextValue) in
-            var dictionary: [String:Int] = [:]
-            dictionary.updateValue(nextValue.1, forKey: nextValue.0)
-            return dict.merging(dictionary, uniquingKeysWith: { (first, _) in first })
-        }
+    let flattenedDictionary = flattenDictionary(of: anotherCafeteriaMenu)
     
     return flattenedDictionary
 }

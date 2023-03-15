@@ -82,19 +82,3 @@ func OrderScreen(theMenuItemIs foodName:String, chargeAt foodPrice:Int, fromStor
     }
     
 }
-
-func flattenDictionary(of theDict:[[String:Int] : String]) -> [String:Int] {
-    
-    let theArray = Array(theDict.keys)
-    
-    let flattenedDictionary = theArray
-        .flatMap { $0 }
-        .reduce( [String:Int]() ) { (dict, nextValue) in
-            var dictionary: [String:Int] = [:]
-            dictionary.updateValue(nextValue.1, forKey: nextValue.0)
-            return dict.merging(dictionary, uniquingKeysWith: { (first, _) in first })
-        }
-    
-    return flattenedDictionary
-}
-
