@@ -61,6 +61,7 @@ outerloop: while true {
         switch shoppingChoice {
         case "p", "P":
             CheckOutScreen()
+            break outerloop
         case "b", "B":
             break outerloop
         default:

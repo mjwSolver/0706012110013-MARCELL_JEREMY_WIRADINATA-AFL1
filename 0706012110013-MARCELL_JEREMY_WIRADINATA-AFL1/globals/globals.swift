@@ -17,18 +17,18 @@ let THE_STORES: [String] = [
     "Tuku-Tuku", "Xiang Jia", "Raburi" ,"Gotri", "Madam Lie", "E&W Sandwich", "GI Joe", "Kopte"
 ]
 
-//var THE_SHOPPING_CART: [[String:Int] : String] = [:]
+var THE_SHOPPING_CART: [[String:Int] : String] = [:]
 
-var THE_SHOPPING_CART: [[String:Int] : String] = [
-    ["Tahu isi": 2 ] : "Tuku-Tuku",
-    ["Normal Coffee":3 ] : "Xiang Jia",
-    ["Nasi Karaage": 2 ] : "Raburi",
-    ["Mie Special": 1 ] : "Gotri",
-    ["Teh Manis": 1 ] : "Madam Lie",
-    ["American Cheese Steak": 2 ] : "E&W Sandwich",
-    ["Chocolate Donuts": 2 ] : "GI Joe",
-    ["Sweet Tea": 1 ] : "Kopte",
-]
+//var THE_SHOPPING_CART: [[String:Int] : String] = [
+//    ["Tahu isi": 2 ] : "Tuku-Tuku",
+//    ["Normal Coffee":3 ] : "Xiang Jia",
+//    ["Nasi Karaage": 2 ] : "Raburi",
+//    ["Mie Special": 1 ] : "Gotri",
+//    ["Teh Manis": 1 ] : "Madam Lie",
+//    ["American Cheese Steak": 2 ] : "E&W Sandwich",
+//    ["Chocolate Donuts": 2 ] : "GI Joe",
+//    ["Sweet Tea": 1 ] : "Kopte",
+//]
 
 let THE_MENU: Dictionary<[String: Int], String> = [
     ["Tahu isi": 10000] : "Tuku-Tuku" ,

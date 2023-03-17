@@ -100,7 +100,7 @@ func calculateBill() -> Int {
     
     var finalBill = 0
     
-    for i in 0...theStoreName.count {
+    for i in 0...theStoreName.count-1 {
         
         var theString = ""
         
