@@ -44,7 +44,7 @@ func OrderScreen(theMenuItemIs foodName:String, chargeAt foodPrice:Int, fromStor
             print("")
             
             
-            let theShoppingCart = flattenDictionary(of: THE_SHOPPING_CART)
+            let theShoppingCart = flattenDictionaryKey(of: THE_SHOPPING_CART)
             let itemNames = Array(theShoppingCart.keys)
     
 //            print("starting")

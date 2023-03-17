@@ -9,26 +9,67 @@ import Foundation
 
 func ShoppingCartScreen(){
     
+    let shoppingChoice = "blank"
+    
 outerloop: while true {
         
     if(THE_SHOPPING_CART.isEmpty) {
         print("")
         print("")
         print("Your cart is Empty")
+        print("")
         break outerloop
     }
 
     let allStores = Array(Set(THE_SHOPPING_CART.values))
-    print(allStores)
+//    print(allStores)
+
+//    let theCartsItems = THE_SHOPPING_CART.filter { $0.value == "Tuku-Tuku" }
+//    let theItems = flattenDictionary(of: theCartsItems)
+//    print(theItems)
+//
+//    break;
+    for theStore in allStores {
+        let theCartsItems = THE_SHOPPING_CART.filter { $0.value == theStore }
+        let theItems = flattenDictionaryKey(of: theCartsItems)
+
+        print("Your Order from \(theStore)")
+        for (itemName, itemQuantity) in theItems {
+            print("- \(itemName) x \(itemQuantity)")
+        }
+
+    }
+    print("""
+        Press [B] to go back
+        Press [P] to pay / checkout
+        Your choice?
+        """, terminator: " ")
     
-    break outerloop
+    let shoppingChoice = readLine()
     
-//    for theStore in allStores {
-//        print("Your Order from \(theStore)")
-//        print("- 'Name of product' x'amount'")
-//    }
+    guard let shoppingDecision = shoppingChoice else {
+        print(" I don't know what to do with that input")
+        continue
+    }
     
-//    let anotherCafeteriaMenu = THE_MENU.filter{ $0.value == THE_STORES[theStoreIndex] }
+    if shoppingDecision.isNumber {
+        print(" Numbers are invalid inputs")
+        continue
+    }
+    
+    if shoppingDecision.bpIsValidInput {
+        switch shoppingChoice {
+        case "p", "P":
+            CheckOutScreen()
+        case "b", "B":
+            break outerloop
+        default:
+            print(" Internal Error in Shopping Cart")
+            continue;
+        }
+    }
+    
+//  let anotherCafeteriaMenu = THE_MENU.filter{ $0.value == THE_STORES[theStoreIndex] }
 
         
     // Able to list out the orders

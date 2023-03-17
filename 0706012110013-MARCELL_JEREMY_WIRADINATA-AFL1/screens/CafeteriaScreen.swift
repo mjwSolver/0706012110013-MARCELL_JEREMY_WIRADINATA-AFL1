@@ -73,8 +73,9 @@ func CafeteriaScreen(cafeteriaIndex: Int){
             )
             
         } else if(cafeteriaChoice.bIsValidInput) {
-            switch cafeteriaChoice.lowercased() {
-                case "b":
+            switch cafeteriaChoice {
+                case "b", "B":
+                print("\nLeaving the cafeteria\n")
                     break outerloop
                 default: continue
             }
@@ -104,7 +105,7 @@ func getMenuOf(theStore theStoreIndex:Int) -> [String: Int] {
     // Filtering the all the menus based on value
     let anotherCafeteriaMenu = THE_MENU.filter{ $0.value == THE_STORES[theStoreIndex] }
     
-    let flattenedDictionary = flattenDictionary(of: anotherCafeteriaMenu)
+    let flattenedDictionary = flattenDictionaryKey(of: anotherCafeteriaMenu)
     
     return flattenedDictionary
 }

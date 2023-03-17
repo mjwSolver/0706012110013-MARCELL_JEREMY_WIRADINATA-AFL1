@@ -17,7 +17,18 @@ let THE_STORES: [String] = [
     "Tuku-Tuku", "Xiang Jia", "Raburi" ,"Gotri", "Madam Lie", "E&W Sandwich", "GI Joe", "Kopte"
 ]
 
-var THE_SHOPPING_CART: [[String:Int] : String] = [:]
+//var THE_SHOPPING_CART: [[String:Int] : String] = [:]
+
+var THE_SHOPPING_CART: [[String:Int] : String] = [
+    ["Tahu isi": 2 ] : "Tuku-Tuku",
+    ["Normal Coffee":3 ] : "Xiang Jia",
+    ["Nasi Karaage": 2 ] : "Raburi",
+    ["Mie Special": 1 ] : "Gotri",
+    ["Teh Manis": 1 ] : "Madam Lie",
+    ["American Cheese Steak": 2 ] : "E&W Sandwich",
+    ["Chocolate Donuts": 2 ] : "GI Joe",
+    ["Sweet Tea": 1 ] : "Kopte",
+]
 
 let THE_MENU: Dictionary<[String: Int], String> = [
     ["Tahu isi": 10000] : "Tuku-Tuku" ,
@@ -58,7 +69,7 @@ let THE_MENU: Dictionary<[String: Int], String> = [
     
     ["Nasi Sayur Ayam": 25000] : "Madam Lie",
     ["Nasi Ayam Sayur": 20000] : "Madam Lie",
-    ["Nasi Ayam Goreng": 15000] : "Madam Lie",
+    ["Nasi Ayam Goreng Pedas": 15000] : "Madam Lie",
     ["Nasi Goreng Special": 10000] : "Madam Lie",
     ["Nasi Goreng + Telur": 22000] : "Madam Lie",
     ["Jus Oren": 26000] : "Madam Lie",
@@ -89,7 +100,7 @@ let THE_MENU: Dictionary<[String: Int], String> = [
     ["Kopi Tarik Cincau": 13000] : "Kopte",
     ["Tarik Kopi Kopte": 12000] : "Kopte",
     ["Kopi Chocolate Tarik": 13000] : "Kopte",
-    ["Teh Manis": 10000] : "Kopte",
+    ["Sweet Tea": 10000] : "Kopte",
     ["Teh Tawar": 8000] : "Kopte",
 ]
 

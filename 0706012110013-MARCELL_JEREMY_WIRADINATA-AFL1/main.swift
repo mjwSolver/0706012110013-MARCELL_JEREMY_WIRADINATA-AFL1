@@ -7,8 +7,9 @@
 
 import Foundation
 
-MainMenuScreen()
+//MainMenuScreen()
 
+calculateBill()
 
 
 
