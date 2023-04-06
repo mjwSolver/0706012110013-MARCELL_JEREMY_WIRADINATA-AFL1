@@ -7,10 +7,75 @@
 
 import Foundation
 
-
-func CheckOutScreen(){
+class CheckOut {
     
+    init() {}
+}
 
+extension CheckOut: OnePrintScreen {
+    func printScreen() {
+        
+        let theFinal = calculateBill()
+        
+    outerloop: while true {
+        print("""
+                Your total order: \(theFinal)
+                Enter the amount of your money:
+                Please enter your payment.
+            """, terminator: " ")
+        
+        var theAmount = readLine()
+        
+        guard let amount = theAmount else {
+            continue;
+        }
+        
+        let nowNumber = Int(amount) ?? -1
+        let isValid = nowNumber != -1
+        
+        if nowNumber < 0 {
+            print("Please enter a valid amount.")
+            print("")
+            continue;
+        }
+        
+        if nowNumber == 0 {
+            print("Payment can't be zero")
+            print("")
+            continue
+        }
+        
+        if !isValid {
+            print("Please enter a valid amount.")
+            print("")
+            continue;
+        }
+        
+        if isValid {
+            
+            if nowNumber >= theFinal {
+                print("You pay \(nowNumber)")
+                print("You're change is \(nowNumber - theFinal)")
+                print("Enjoy your meals")
+                print("Press [return] to go back to main screen:")
+                var something = readLine()
+                        
+                break outerloop
+                
+            } else {
+                print("not enough money")
+                continue;
+            }
+
+        }
+    }
+
+    }
+}
+
+// ==================================
+// Old Era
+func CheckOutScreen(){
     
     let theFinal = calculateBill()
     

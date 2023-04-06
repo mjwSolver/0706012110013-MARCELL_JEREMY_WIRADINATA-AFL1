@@ -14,6 +14,7 @@
 		045FA13729BAD56B0014E0AB /* CafeteriaScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 045FA13629BAD56B0014E0AB /* CafeteriaScreen.swift */; };
 		049E436929C1BBAC00477136 /* CheckoutScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 049E436829C1BBAC00477136 /* CheckoutScreen.swift */; };
 		049E436C29C214AD00477136 /* utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 049E436B29C214AD00477136 /* utilities.swift */; };
+		04BA1BE529DF80B000C630D9 /* Screen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04BA1BE429DF80B000C630D9 /* Screen.swift */; };
 		04CBC1D729AD9F200063A981 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04CBC1D629AD9F200063A981 /* main.swift */; };
 		04CBC1E229ADA5CC0063A981 /* stores.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04CBC1E129ADA5CC0063A981 /* stores.swift */; };
 		04E480E629BAD3E9006F84E5 /* globals.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04E480E529BAD3E9006F84E5 /* globals.swift */; };
@@ -40,6 +41,7 @@
 		045FA13629BAD56B0014E0AB /* CafeteriaScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CafeteriaScreen.swift; sourceTree = "<group>"; };
 		049E436829C1BBAC00477136 /* CheckoutScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckoutScreen.swift; sourceTree = "<group>"; };
 		049E436B29C214AD00477136 /* utilities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = utilities.swift; sourceTree = "<group>"; };
+		04BA1BE429DF80B000C630D9 /* Screen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Screen.swift; sourceTree = "<group>"; };
 		04CBC1D329AD9F200063A981 /* 0706012110013-MARCELL_JEREMY_WIRADINATA-AFL1 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "0706012110013-MARCELL_JEREMY_WIRADINATA-AFL1"; sourceTree = BUILT_PRODUCTS_DIR; };
 		04CBC1D629AD9F200063A981 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		04CBC1E129ADA5CC0063A981 /* stores.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = stores.swift; sourceTree = "<group>"; };
@@ -128,6 +130,7 @@
 				045FA13629BAD56B0014E0AB /* CafeteriaScreen.swift */,
 				0438AFAC29C0CF0C00558588 /* OrderScreen.swift */,
 				049E436829C1BBAC00477136 /* CheckoutScreen.swift */,
+				04BA1BE429DF80B000C630D9 /* Screen.swift */,
 			);
 			path = screens;
 			sourceTree = "<group>";
@@ -201,6 +204,7 @@
 				0442000E29DD777000164FEB /* MenuItem.swift in Sources */,
 				04CBC1D729AD9F200063A981 /* main.swift in Sources */,
 				04CBC1E229ADA5CC0063A981 /* stores.swift in Sources */,
+				04BA1BE529DF80B000C630D9 /* Screen.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

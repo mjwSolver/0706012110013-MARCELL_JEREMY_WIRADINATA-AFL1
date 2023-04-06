@@ -7,9 +7,9 @@
 
 import Foundation
 
-MainMenuScreen()
+let TheMainMenu = MainMenu()
 
-//calculateBill()
+TheMainMenu.printScreen()
 
 
 

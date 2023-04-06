@@ -7,82 +7,150 @@
 
 import Foundation
 
-func MainMenuScreen(){
+class MainMenu {
     
-    var mainMenuChoice: String? = ""
-    outerloop: while true {
-        
-        // Welcome to UC Cafeteria ....
-        printGreetingPage()
-        
-        mainMenuChoice = readLine()
-        
-        guard let mainMenuChoice = mainMenuChoice else {
-            print("Invalid input, please try again ", terminator: " ")
-            continue
-        }
-        
-        if(mainMenuChoice.isNumber){
+    func printGreetingPage(){
+        print("")
+        print("""
+            🙌 Welcome to UC-Walk Cafeteria 👩‍🍳 👨‍🍳 🧑‍🍳, please select a cafeteria:
             
-            let choiceAsNumber = Int(mainMenuChoice) ?? -1
-            let validOption = choiceAsNumber < THE_STORES.count && choiceAsNumber != -1
+            """)
+        storeUtility.printStores()
+        print("""
+        ---
+        🛒 [S]hopping Cart
+        ❌ [Q]uit
+        Your cafeteria of choice❔
+        """, terminator: " "
+        )
+    }
+    
+    init() {}
+    
+}
+
+extension MainMenu: OnePrintScreen {
+    func printScreen() {
+        
+        var mainMenuChoice: String? = ""
+        outerloop: while true {
             
-            if(validOption){
-                CafeteriaScreen(cafeteriaIndex: choiceAsNumber - 1)
-            } else if(choiceAsNumber == -1) {
-                print("An Error Occured - Conversion failed")
+            // Welcome to UC Cafeteria ....
+            self.printGreetingPage()
+            
+            mainMenuChoice = readLine()
+            
+            guard let mainMenuChoice = mainMenuChoice else {
+                print("Invalid input, please try again ", terminator: " ")
+                continue
+            }
+            
+            if(mainMenuChoice.isNumber){
+                
+                let choiceAsNumber = Int(mainMenuChoice) ?? -1
+                let validOption = choiceAsNumber < THE_STORES.count && choiceAsNumber != -1
+                
+                if(validOption){
+                    CafeteriaScreen(cafeteriaIndex: choiceAsNumber - 1)
+                } else if(choiceAsNumber == -1) {
+                    print("An Error Occured - Conversion failed")
+                } else {
+                    print("Option does not exist")
+                }
+                
             } else {
-                print("Option does not exist")
-            }
-            
-        } else {
-            
-            switch mainMenuChoice.lowercased() {
-            case "q" : break outerloop
-            case "s": ShoppingCartScreen()
-            default: print("\n I don't know what to do with that input \n")
+                
+                switch mainMenuChoice.lowercased() {
+                case "q" : break outerloop
+                case "s": ShoppingCartScreen()
+                default: print("\n I don't know what to do with that input \n")
+                }
+                
             }
             
         }
-        
-        // Error Handling
-        // out of bounds -> this option does not exist
-        // - Take the limit from the length of the array
-        
-        // Success Handling
-        // in range, then execute one function, takes in as integer
-        
     }
 }
+
+// ==================================
+// Old Era
+
+//func MainMenuScreen(){
+//
+//    var mainMenuChoice: String? = ""
+//    outerloop: while true {
+//
+//        // Welcome to UC Cafeteria ....
+//        printGreetingPage()
+//
+//        mainMenuChoice = readLine()
+//
+//        guard let mainMenuChoice = mainMenuChoice else {
+//            print("Invalid input, please try again ", terminator: " ")
+//            continue
+//        }
+//
+//        if(mainMenuChoice.isNumber){
+//
+//            let choiceAsNumber = Int(mainMenuChoice) ?? -1
+//            let validOption = choiceAsNumber < THE_STORES.count && choiceAsNumber != -1
+//
+//            if(validOption){
+//                CafeteriaScreen(cafeteriaIndex: choiceAsNumber - 1)
+//            } else if(choiceAsNumber == -1) {
+//                print("An Error Occured - Conversion failed")
+//            } else {
+//                print("Option does not exist")
+//            }
+//
+//        } else {
+//
+//            switch mainMenuChoice.lowercased() {
+//            case "q" : break outerloop
+//            case "s": ShoppingCartScreen()
+//            default: print("\n I don't know what to do with that input \n")
+//            }
+//
+//        }
+//
+//        // Error Handling
+//        // out of bounds -> this option does not exist
+//        // - Take the limit from the length of the array
+//
+//        // Success Handling
+//        // in range, then execute one function, takes in as integer
+//
+//    }
+//}
 
 // Welcome to UC Cafeteria
-fileprivate func printGreetingPage(){
-    print("")
-    print("""
-        Welcome to UC-Walk Cafeteria, please select a cafeteria:
-        
-        """)
-    printStores()
-    print("""
-    -
-    [S]hopping Cart
-    [Q]uit
-    Your cafeteria of choice?
-    """, terminator: " "
-    )
-}
+//fileprivate func printGreetingPage(){
+//    print("")
+//    print("""
+//        🙌 Welcome to UC-Walk Cafeteria 👩‍🍳 👨‍🍳 🧑‍🍳, please select a cafeteria:
+//
+//        """)
+//    printStores()
+//    print("""
+//    -
+//    🛒 [S]hopping Cart
+//    ❌ [Q]uit
+//    Your cafeteria of choice❔
+//    """, terminator: " "
+//    )
+//}
 
 
-fileprivate func printStores() {
-    let theStores = THE_STORES
-    
-    for (index, store) in theStores.enumerated() {
-        print("[\(index+1)] \(store)")
-    }
-}
+//fileprivate func printStores() {
+//    let theStores = THE_STORES
+//
+//    for (index, store) in theStores.enumerated() {
+//        print("[\(index+1)] \(store)")
+//    }
+//}
 
-fileprivate func printingStores(){
-    let theMenuValues = Array(THE_MENU.values)
-    let justTheStore = Set(theMenuValues)
-    print(justTheStore)
-}
+//fileprivate func printingStores(){
+//    let theMenuValues = Array(THE_MENU.values)
+//    let justTheStore = Set(theMenuValues)
+//    print(justTheStore)
+//}
