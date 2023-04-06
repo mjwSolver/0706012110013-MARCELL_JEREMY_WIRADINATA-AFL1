@@ -16,15 +16,7 @@ class StoreUtility {
             print("[\(index+1)] \(store)")
         }
     }
-    
-    func printMenuOf(store theStore:Store){
         
-        for (index, menuItem) in theStore.menuList.enumerated() {
-            print("[\(index + 1)] \(menuItem.name)")
-        }
-        
-    }
-    
 }
 
 class Store {
@@ -35,4 +27,11 @@ class Store {
         self.name = name
         self.menuList = menuList
     }
+    
+    func printMenuList() {
+        for (index, menuItem) in self.menuList.enumerated() {
+            print("[\(index + 1)] \(menuItem.name)")
+        }
+    }
+    
 }
