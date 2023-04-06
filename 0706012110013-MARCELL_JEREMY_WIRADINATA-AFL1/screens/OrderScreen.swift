@@ -15,6 +15,12 @@ class Order {
     
     init(){}
     
+    init(theMenuItem :MenuItem, storeName:String){
+        self.foodName = theMenuItem.name
+        self.foodPrice = theMenuItem.price
+        self.storeName = storeName
+    }
+    
 }
 
 extension Order : OnePrintScreen {

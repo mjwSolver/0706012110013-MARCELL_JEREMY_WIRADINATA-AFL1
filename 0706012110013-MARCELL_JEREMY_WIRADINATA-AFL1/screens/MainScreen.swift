@@ -9,6 +9,9 @@ import Foundation
 
 class MainMenu {
     
+    let TheShoppingCart = ShoppingCart()
+    let TheCafeteria = Cafeteria()
+    
     func printGreetingPage(){
         print("")
         print("""
@@ -51,7 +54,9 @@ extension MainMenu: OnePrintScreen {
                 let validOption = choiceAsNumber < THE_STORES.count && choiceAsNumber != -1
                 
                 if(validOption){
-                    CafeteriaScreen(cafeteriaIndex: choiceAsNumber - 1)
+                    self.TheCafeteria.cafeteriaIndex = choiceAsNumber - 1
+                    self.TheCafeteria.getCurrentStore()
+                    self.TheCafeteria.printScreen()
                 } else if(choiceAsNumber == -1) {
                     print("An Error Occured - Conversion failed")
                 } else {
@@ -62,7 +67,7 @@ extension MainMenu: OnePrintScreen {
                 
                 switch mainMenuChoice.lowercased() {
                 case "q" : break outerloop
-                case "s": ShoppingCartScreen()
+                case "s": self.TheShoppingCart.printScreen()
                 default: print("\n I don't know what to do with that input \n")
                 }
                 
