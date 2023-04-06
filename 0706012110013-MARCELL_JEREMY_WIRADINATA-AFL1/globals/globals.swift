@@ -17,6 +17,19 @@ let THE_STORES: [String] = [
     "Tuku-Tuku", "Xiang Jia", "Raburi" ,"Gotri", "Madam Lie", "E&W Sandwich", "GI Joe", "Kopte"
 ]
 
+let THE_STORESS: [Store] = [
+    Store(name: "Tuku-Tuku"),
+    Store(name: "Xiang Jia"),
+    Store(name: "Raburi"),
+    Store(name: "Gotri"),
+    Store(name: "Madam Lie"),
+    Store(name: "E&W Sandwich"),
+    Store(name: "GI Joe"),
+    Store(name: "Kopte"),
+]
+
+let THE_SHOPPING_CARTT = nil
+
 var THE_SHOPPING_CART: [[String:Int] : String] = [:]
 
 //var THE_SHOPPING_CART: [[String:Int] : String] = [

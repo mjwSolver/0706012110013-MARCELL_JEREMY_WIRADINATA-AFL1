@@ -8,6 +8,6 @@
 import Foundation
 
 struct Store {
-    let id: Int;
-    var name: String;
+    let name: String;
+    let menuList: [MenuItem]
 }
