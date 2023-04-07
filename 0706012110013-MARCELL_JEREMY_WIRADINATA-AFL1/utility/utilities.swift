@@ -25,9 +25,9 @@ func flattenDictionaryKey(of theDict:[[String:Int] : String]) -> [String:Int] {
     return flattenedDictionary
 }
 
-func filterAllStoresBy(Store storeName:String) -> [[String:Int]:String] {
-    return THE_MENU.filter{ $0.value == storeName}
-}
+//func filterAllStoresBy(Store storeName:String) -> [[String:Int]:String] {
+//    return THE_MENU.filter{ $0.value == storeName}
+//}
 
 //func filterShoppingCartBy(Store storeName:String)->[[String:Int]:String] {
 //    return THE_SHOPPING_CART.filter{ $0.value == storeName }
