@@ -27,7 +27,7 @@ let THE_STORESS: [Store] = [
     Store(name: "Kopte", menuList: MENU_KOPTE),
 ]
 
-var THE_SHOPPING_CARTT: [CartItem] = []
+//var THE_SHOPPING_CARTT: [CartItem] = []
 
 let MENU_TUKUTUKU = [
     MenuItem(id: 1, name: "Tahu isi", price: 10000),
@@ -122,8 +122,8 @@ let MENU_KOPTE = [
 
 // Shopping Cart
 
-var shoppingCart: [[String : String]:Int] = [:]
-var THE_SHOPPING_CART: [[String:Int] : String] = [:]
+//var shoppingCart: [[String : String]:Int] = [:]
+//var THE_SHOPPING_CART: [[String:Int] : String] = [:]
 
 let THE_MENU: Dictionary<[String: Int], String> = [
     ["Tahu isi": 10000] : "Tuku-Tuku" ,

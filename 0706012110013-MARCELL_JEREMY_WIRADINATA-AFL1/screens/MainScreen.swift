@@ -9,6 +9,8 @@ import Foundation
 
 class MainMenu {
         
+    let TheCafeteria = Cafeteria()
+    
     func printGreetingPage(){
         print("")
         print("""

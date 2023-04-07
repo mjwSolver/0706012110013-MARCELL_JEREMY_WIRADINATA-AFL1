@@ -9,16 +9,19 @@ import Foundation
 
 class Order {
     
-    var foodName: String = ""
-    var foodPrice: Int = 0
+    var theMenuItem = MenuItem(id: -1, name: "Dummy", price: 100)
     var storeName: String = ""
     
     init(){}
     
     init(theMenuItem :MenuItem, storeName:String){
-        self.foodName = theMenuItem.name
-        self.foodPrice = theMenuItem.price
+        self.theMenuItem = theMenuItem
         self.storeName = storeName
+    }
+    
+    init(_ thePackage :CafeteriaToOrder){
+        self.theMenuItem = thePackage.theMenuItem
+        self.storeName = thePackage.storeName
     }
     
 }
@@ -33,9 +36,9 @@ extension Order : OnePrintScreen {
             print("")
             print(
                 """
-                \(foodName) @ \(foodPrice)
+                \(theMenuItem.name) @ \(theMenuItem.price)
                 - Press [B] to go back -
-                How many \"\(foodName)\" would you like to order?
+                How many \"\(theMenuItem.name)\" would you like to order?
                 """, terminator: " "
             )
             
@@ -48,8 +51,8 @@ extension Order : OnePrintScreen {
             
             if amountOrdered.isNumber {
                 
-                let choiceAsNumber = Int(amountOrdered) ?? -1
-                let isValidChoice = choiceAsNumber != -1
+                let amountAsNumber = Int(amountOrdered) ?? -1
+                let isValidChoice = amountAsNumber > 0
                 
                 if (!isValidChoice) {
                     print(" Internal Conversion Error")
@@ -59,28 +62,25 @@ extension Order : OnePrintScreen {
                 print("Thank you for ordering!")
                 print("")
                 
-                
-                let theShoppingCart = flattenDictionaryKey(of: THE_SHOPPING_CART)
-                let itemNames = Array(theShoppingCart.keys)
-                    
-                var previousAmount: Int = 0
-                if(itemNames.contains(foodName)){
-                    // Condition guarantees the existence of this value
-                    previousAmount = theShoppingCart[foodName]!
-                    
-                    THE_SHOPPING_CART.removeValue(forKey: [foodName:previousAmount])
-    //                print("before")
-    //                print(THE_SHOPPING_CART as AnyObject)
-                    
-                }
+                // Do we store everything then we aggregate everything later at checkout?
+//                var theCartItem = CartItem(menuItem: theMenuItem, quantity: amountAsNumber)
+//                TheShoppingCart.contents.append(theCartItem)
 
-                THE_SHOPPING_CART[[foodName:choiceAsNumber + previousAmount]] = storeName
-    //            print("after")
-    //            print(THE_SHOPPING_CART as AnyObject)
+                // Do we find a similar Item and then increment it's quantity?
+                var theCartItem = CartItem(menuItem: theMenuItem, quantity: amountAsNumber)
                 
+                if !TheShoppingCart.isSimilarItemInCartOf(id: theMenuItem.id) {
+                    TheShoppingCart.contents.append(theCartItem)
+                }
+                
+                var similarItemIndex = TheShoppingCart.retrieveItemInCart(id: theMenuItem.id)
+                if similarItemIndex == -1 {
+                    print(" No Similar Item found, duplicate ID?")
+                }
+                
+                TheShoppingCart.contents[similarItemIndex].quantity += theCartItem.quantity
+                                
                 break outerloop
-                // Logic to check if the entry exists
-                // - if true then increment the value by the amount ordered
                 
             } else if amountOrdered.bIsValidInput {
                 

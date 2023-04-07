@@ -8,9 +8,6 @@
 import Foundation
 
 let TheShoppingCart = ShoppingCart()
-let TheCafeteria = Cafeteria()
-let TheOrder = Order()
-let TheCheckOut = CheckOut()
 
 let TheMainMenu = MainMenu()
 TheMainMenu.printScreen()

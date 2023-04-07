@@ -7,8 +7,20 @@
 
 import Foundation
 
+// For transfering data from Cafeteria to OrderScreen
+//struct CafeteriaToOrder {
+//    var foodName: String = ""
+//    var foodPrice: Int = 0
+//    var storeName: String = ""
+//}
+
+struct CafeteriaToOrder {
+    var theMenuItem = MenuItem(id: -1, name: "Dummy", price: 100)
+    var storeName: String = ""
+}
+
 class Cafeteria {
-        
+            
     var cafeteriaIndex = 0
     var currentStore = Store(name: "Blank", menuList: [MenuItem(id: -1, name: "Dummy", price: -1)])
     
@@ -72,15 +84,13 @@ extension Cafeteria: OnePrintScreen {
                 }
                 
                 let theMenuItem = theCafeteriaMenu[choiceAsNumber-1]
+
+                let ThePackage = CafeteriaToOrder(
+                    theMenuItem: theMenuItem,
+                    storeName: currentStore.name)
                 
-//                guard let menuPrice = price else {
-//                    print(" Internal Error occurred")
-//                    continue
-//                }
+                let TheOrder = Order(ThePackage)
                 
-                TheOrder.foodName = theMenuItem.name
-                TheOrder.foodPrice = theMenuItem.price
-                TheOrder.storeName = currentStore.name
                 TheOrder.printScreen()
                 
 //                OrderScreen(

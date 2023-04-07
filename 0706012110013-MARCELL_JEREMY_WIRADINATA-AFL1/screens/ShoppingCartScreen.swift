@@ -10,7 +10,39 @@ import Foundation
 
 class ShoppingCart {
     
+    var contents: [CartItem] = []
+    
     init() {}
+    
+    func isSimilarItemInCartOf(id: Int) -> Bool{
+        
+        for theItems in contents {
+            if theItems.id == id {
+                return true
+            } else { continue }
+        }
+        
+        return false;
+        
+    }
+    
+    func retrieveItemInCart(id: Int) -> Int {
+        
+        if !isSimilarItemInCartOf(id: id) {
+//            return CartItem(id: -1, name: "Blank", price: 0, quantity: 0)
+            return -1
+        }
+        
+        for (theIndex, theItems) in contents.enumerated() {
+            if theItems.id == id {
+                return theIndex
+            } else { continue }
+        }
+            
+//        return CartItem(id: -1, name: "Duplicate ID", price: 0, quantity: 0)
+        return -1
+        
+    }
     
 }
 
@@ -20,7 +52,7 @@ extension ShoppingCart: OnePrintScreen {
         
     outerloop: while true {
             
-        if(THE_SHOPPING_CART.isEmpty) {
+        if(contents.isEmpty) {
             print("")
             print("")
             print("Your cart is Empty")
@@ -28,6 +60,7 @@ extension ShoppingCart: OnePrintScreen {
             break outerloop
         }
 
+        
         let allStores = Array(Set(THE_SHOPPING_CART.values))
 
         for theStore in allStores {
