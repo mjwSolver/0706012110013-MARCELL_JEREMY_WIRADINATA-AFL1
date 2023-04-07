@@ -8,9 +8,7 @@
 import Foundation
 
 class Cafeteria {
-    
-    let TheOrder = Order()
-    
+        
     var cafeteriaIndex = 0
     var currentStore = Store(name: "Blank", menuList: [MenuItem(id: -1, name: "Dummy", price: -1)])
     
@@ -83,6 +81,7 @@ extension Cafeteria: OnePrintScreen {
                 TheOrder.foodName = theMenuItem.name
                 TheOrder.foodPrice = theMenuItem.price
                 TheOrder.storeName = currentStore.name
+                TheOrder.printScreen()
                 
 //                OrderScreen(
 //                    theMenuItemIs: theCafteriaMenu[choiceAsNumber-1],

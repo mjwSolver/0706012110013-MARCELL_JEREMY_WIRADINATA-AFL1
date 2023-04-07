@@ -7,8 +7,12 @@
 
 import Foundation
 
-let TheMainMenu = MainMenu()
+let TheShoppingCart = ShoppingCart()
+let TheCafeteria = Cafeteria()
+let TheOrder = Order()
+let TheCheckOut = CheckOut()
 
+let TheMainMenu = MainMenu()
 TheMainMenu.printScreen()
 
 
