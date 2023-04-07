@@ -7,22 +7,6 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "0BC507EF-C530-400F-8672-207EB8F2D231"
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "0706012110013-MARCELL_JEREMY_WIRADINATA-AFL1/screens/MainScreen.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "14"
-            endingLineNumber = "14"
-            landmarkName = "printGreetingPage()"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
             uuid = "D6501D0D-D25E-4F8C-9E9E-FE3C32F5AE18"
             shouldBeEnabled = "No"
             ignoreCount = "0"
@@ -238,8 +222,8 @@
             filePath = "0706012110013-MARCELL_JEREMY_WIRADINATA-AFL1/screens/ShoppingCartScreen.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "52"
-            endingLineNumber = "52"
+            startingLineNumber = "51"
+            endingLineNumber = "51"
             landmarkName = "extractAllStoreNames()"
             landmarkType = "7">
             <Locations>
@@ -286,8 +270,8 @@
             filePath = "0706012110013-MARCELL_JEREMY_WIRADINATA-AFL1/screens/ShoppingCartScreen.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "53"
-            endingLineNumber = "53"
+            startingLineNumber = "52"
+            endingLineNumber = "52"
             landmarkName = "extractAllStoreNames()"
             landmarkType = "7">
             <Locations>
@@ -334,8 +318,8 @@
             filePath = "0706012110013-MARCELL_JEREMY_WIRADINATA-AFL1/screens/ShoppingCartScreen.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "56"
-            endingLineNumber = "56"
+            startingLineNumber = "55"
+            endingLineNumber = "55"
             landmarkName = "extractAllStoreNames()"
             landmarkType = "7">
          </BreakpointContent>
@@ -350,8 +334,8 @@
             filePath = "0706012110013-MARCELL_JEREMY_WIRADINATA-AFL1/screens/ShoppingCartScreen.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "55"
-            endingLineNumber = "55"
+            startingLineNumber = "54"
+            endingLineNumber = "54"
             landmarkName = "extractAllStoreNames()"
             landmarkType = "7">
             <Locations>
@@ -398,8 +382,8 @@
             filePath = "0706012110013-MARCELL_JEREMY_WIRADINATA-AFL1/screens/ShoppingCartScreen.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "54"
-            endingLineNumber = "54"
+            startingLineNumber = "53"
+            endingLineNumber = "53"
             landmarkName = "extractAllStoreNames()"
             landmarkType = "7">
             <Locations>
@@ -446,8 +430,8 @@
             filePath = "0706012110013-MARCELL_JEREMY_WIRADINATA-AFL1/screens/ShoppingCartScreen.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "48"
-            endingLineNumber = "48"
+            startingLineNumber = "47"
+            endingLineNumber = "47"
             landmarkName = "extractAllStoreNames()"
             landmarkType = "7">
          </BreakpointContent>
@@ -462,8 +446,8 @@
             filePath = "0706012110013-MARCELL_JEREMY_WIRADINATA-AFL1/screens/ShoppingCartScreen.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "50"
-            endingLineNumber = "50"
+            startingLineNumber = "49"
+            endingLineNumber = "49"
             landmarkName = "extractAllStoreNames()"
             landmarkType = "7">
          </BreakpointContent>
@@ -478,8 +462,8 @@
             filePath = "0706012110013-MARCELL_JEREMY_WIRADINATA-AFL1/screens/ShoppingCartScreen.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "60"
-            endingLineNumber = "60"
+            startingLineNumber = "59"
+            endingLineNumber = "59"
             landmarkName = "extractAllStoreNames()"
             landmarkType = "7">
             <Locations>

@@ -10,8 +10,7 @@ import Foundation
 
 class ShoppingCart {
     
-    let TheCheckOut = CheckOut()
-    var contents: [CartItem] = []
+   var contents: [CartItem] = []
     
     init() {}
     
@@ -113,6 +112,7 @@ extension ShoppingCart: OnePrintScreen {
         if shoppingDecision.bpIsValidInput {
             switch shoppingChoice {
             case "p", "P":
+                let TheCheckOut = CheckOut()
                 TheCheckOut.printScreen()
                 break outerloop
             case "b", "B":

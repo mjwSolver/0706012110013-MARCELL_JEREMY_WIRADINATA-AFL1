@@ -9,8 +9,6 @@ import Foundation
 
 class MainMenu {
         
-    let TheCafeteria = Cafeteria()
-    
     func printGreetingPage(){
         print("")
         print("""
@@ -53,6 +51,7 @@ extension MainMenu: OnePrintScreen {
                 let validOption = choiceAsNumber < THE_STORES.count && choiceAsNumber != -1
                 
                 if(validOption){
+                    let TheCafeteria = Cafeteria()
                     TheCafeteria.cafeteriaIndex = choiceAsNumber - 1
                     TheCafeteria.getCurrentStore()
                     TheCafeteria.printScreen()
