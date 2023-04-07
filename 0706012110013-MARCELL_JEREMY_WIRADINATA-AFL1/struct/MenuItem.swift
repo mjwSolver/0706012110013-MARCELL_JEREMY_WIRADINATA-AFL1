@@ -30,18 +30,19 @@ class MenuItem: Item {
 class CartItem: MenuItem {
     
     var quantity = 0
+    var storeName = ""
     
-    init(menuItem: MenuItem, quantity: Int){
+    init(menuItem: MenuItem, quantity: Int, storeName: String){
         super.init(id: menuItem.id, name: menuItem.name, price: menuItem.price)
         self.quantity = quantity
     }
     
-    init(id:Int, name:String, price: Int, quantity: Int){
+    init(id:Int, name:String, price: Int, quantity: Int, storeName: String){
         super.init(id: id, name: name, price: price)
         self.quantity = quantity
     }
     
-    func IncremenetQuantity(amount:Int){
+    func IncrementQuantity(amount:Int){
         self.quantity += amount
     }
     

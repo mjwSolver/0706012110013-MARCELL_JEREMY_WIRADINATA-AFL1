@@ -67,7 +67,10 @@ extension Order : OnePrintScreen {
 //                TheShoppingCart.contents.append(theCartItem)
 
                 // Do we find a similar Item and then increment it's quantity?
-                var theCartItem = CartItem(menuItem: theMenuItem, quantity: amountAsNumber)
+                var theCartItem = CartItem(
+                    menuItem: theMenuItem,
+                    quantity: amountAsNumber,
+                    storeName: storeName)
                 
                 if !TheShoppingCart.isSimilarItemInCartOf(id: theMenuItem.id) {
                     TheShoppingCart.contents.append(theCartItem)
@@ -78,7 +81,7 @@ extension Order : OnePrintScreen {
                     print(" No Similar Item found, duplicate ID?")
                 }
                 
-                TheShoppingCart.contents[similarItemIndex].quantity += theCartItem.quantity
+                TheShoppingCart.contents[similarItemIndex].IncrementQuantity(amount: theCartItem.quantity)
                                 
                 break outerloop
                 
