@@ -10,6 +10,7 @@ import Foundation
 
 class ShoppingCart {
     
+    let TheCheckOut = CheckOut()
     var contents: [CartItem] = []
     
     init() {}
@@ -49,7 +50,7 @@ class ShoppingCart {
         var AllTheStores: [String] = []
         
         for theItems in contents {
-            
+      
             if !AllTheStores.contains( theItems.storeName ) {
                 AllTheStores.append( theItems.storeName )
             }
@@ -63,7 +64,6 @@ class ShoppingCart {
 
 extension ShoppingCart: OnePrintScreen {
     func printScreen() {
-        let shoppingChoice = "blank"
         
         if(contents.isEmpty) {
             print("")
@@ -107,7 +107,7 @@ extension ShoppingCart: OnePrintScreen {
         if shoppingDecision.bpIsValidInput {
             switch shoppingChoice {
             case "p", "P":
-                CheckOutScreen()
+                TheCheckOut.printScreen()
                 break outerloop
             case "b", "B":
                 break outerloop

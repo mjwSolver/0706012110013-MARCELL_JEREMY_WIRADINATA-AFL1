@@ -8,7 +8,7 @@
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
             uuid = "0BC507EF-C530-400F-8672-207EB8F2D231"
-            shouldBeEnabled = "Yes"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "0706012110013-MARCELL_JEREMY_WIRADINATA-AFL1/screens/MainScreen.swift"
@@ -18,6 +18,502 @@
             endingLineNumber = "14"
             landmarkName = "printGreetingPage()"
             landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "D6501D0D-D25E-4F8C-9E9E-FE3C32F5AE18"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "0706012110013-MARCELL_JEREMY_WIRADINATA-AFL1/screens/OrderScreen.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "67"
+            endingLineNumber = "67"
+            landmarkName = "printScreen()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "A4712DE0-46B2-4554-A1B1-4E37A942E3FD"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "0706012110013-MARCELL_JEREMY_WIRADINATA-AFL1/screens/CafeteriaScreen.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "92"
+            endingLineNumber = "92"
+            landmarkName = "printScreen()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "D58F201B-D553-41E6-8A09-10EC6DBECC82"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "0706012110013-MARCELL_JEREMY_WIRADINATA-AFL1/screens/CafeteriaScreen.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "94"
+            endingLineNumber = "94"
+            landmarkName = "printScreen()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "06719598-0E87-4B19-AF24-D3D64F5B1851"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "0706012110013-MARCELL_JEREMY_WIRADINATA-AFL1/screens/OrderScreen.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "71"
+            endingLineNumber = "71"
+            landmarkName = "printScreen()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "298F7B6B-93FA-472A-9088-6D71811EECA4"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "0706012110013-MARCELL_JEREMY_WIRADINATA-AFL1/screens/OrderScreen.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "74"
+            endingLineNumber = "74"
+            landmarkName = "printScreen()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "1907C0BB-392B-4237-AD8C-7F4432DB4558"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "0706012110013-MARCELL_JEREMY_WIRADINATA-AFL1/screens/OrderScreen.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "72"
+            endingLineNumber = "72"
+            landmarkName = "printScreen()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "8F7A778B-FC34-45AA-9CF3-0CE425C2CDCF"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "0706012110013-MARCELL_JEREMY_WIRADINATA-AFL1/screens/OrderScreen.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "73"
+            endingLineNumber = "73"
+            landmarkName = "printScreen()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "52129925-4BA3-463C-8AC1-E77F688A63E1"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "0706012110013-MARCELL_JEREMY_WIRADINATA-AFL1/screens/OrderScreen.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "75"
+            endingLineNumber = "75"
+            landmarkName = "printScreen()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "53D2B110-DA0D-4F96-86B6-6AA449902A07"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "0706012110013-MARCELL_JEREMY_WIRADINATA-AFL1/screens/OrderScreen.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "86"
+            endingLineNumber = "86"
+            landmarkName = "printScreen()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "53D2B110-DA0D-4F96-86B6-6AA449902A07 - a37a1e3c5ec5651e"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "_706012110013_MARCELL_JEREMY_WIRADINATA_AFL1.Order.printScreen() -&gt; ()"
+                  moduleName = "0706012110013-MARCELL_JEREMY_WIRADINATA-AFL1"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/mac/Documents/XcodeProjects/0706012110013-MARCELL_JEREMY_WIRADINATA-AFL1/0706012110013-MARCELL_JEREMY_WIRADINATA-AFL1/screens/OrderScreen.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "85"
+                  endingLineNumber = "85"
+                  offsetFromSymbolStart = "2959">
+               </Location>
+               <Location
+                  uuid = "53D2B110-DA0D-4F96-86B6-6AA449902A07 - a37a1e3c5ec562fd"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "_706012110013_MARCELL_JEREMY_WIRADINATA_AFL1.Order.printScreen() -&gt; ()"
+                  moduleName = "0706012110013-MARCELL_JEREMY_WIRADINATA-AFL1"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/mac/Documents/XcodeProjects/0706012110013-MARCELL_JEREMY_WIRADINATA-AFL1/0706012110013-MARCELL_JEREMY_WIRADINATA-AFL1/screens/OrderScreen.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "86"
+                  endingLineNumber = "86"
+                  offsetFromSymbolStart = "2984">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "9C2CAB1C-6811-460C-8438-BC08E5A62901"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "0706012110013-MARCELL_JEREMY_WIRADINATA-AFL1/screens/OrderScreen.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "87"
+            endingLineNumber = "87"
+            landmarkName = "printScreen()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "F1AB28D2-DA19-42EF-B253-1B5C26A9EE94"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "0706012110013-MARCELL_JEREMY_WIRADINATA-AFL1/screens/OrderScreen.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "81"
+            endingLineNumber = "81"
+            landmarkName = "printScreen()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "05A43261-280C-430A-B097-8DEC77FA2721"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "0706012110013-MARCELL_JEREMY_WIRADINATA-AFL1/screens/ShoppingCartScreen.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "52"
+            endingLineNumber = "52"
+            landmarkName = "extractAllStoreNames()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "05A43261-280C-430A-B097-8DEC77FA2721 - bff53195d359de41"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "_706012110013_MARCELL_JEREMY_WIRADINATA_AFL1.ShoppingCart.extractAllStoreNames() -&gt; Swift.Array&lt;Swift.String&gt;"
+                  moduleName = "0706012110013-MARCELL_JEREMY_WIRADINATA-AFL1"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/mac/Documents/XcodeProjects/0706012110013-MARCELL_JEREMY_WIRADINATA-AFL1/0706012110013-MARCELL_JEREMY_WIRADINATA-AFL1/screens/ShoppingCartScreen.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "52"
+                  endingLineNumber = "52"
+                  offsetFromSymbolStart = "171">
+               </Location>
+               <Location
+                  uuid = "05A43261-280C-430A-B097-8DEC77FA2721 - bff53195d359de41"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "_706012110013_MARCELL_JEREMY_WIRADINATA_AFL1.ShoppingCart.extractAllStoreNames() -&gt; Swift.Array&lt;Swift.String&gt;"
+                  moduleName = "0706012110013-MARCELL_JEREMY_WIRADINATA-AFL1"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/mac/Documents/XcodeProjects/0706012110013-MARCELL_JEREMY_WIRADINATA-AFL1/0706012110013-MARCELL_JEREMY_WIRADINATA-AFL1/screens/ShoppingCartScreen.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "52"
+                  endingLineNumber = "52"
+                  offsetFromSymbolStart = "101">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "C307353C-2973-4A15-9AFE-FCEF88E3FF67"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "0706012110013-MARCELL_JEREMY_WIRADINATA-AFL1/screens/ShoppingCartScreen.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "53"
+            endingLineNumber = "53"
+            landmarkName = "extractAllStoreNames()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "C307353C-2973-4A15-9AFE-FCEF88E3FF67 - bff53195d359de83"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "_706012110013_MARCELL_JEREMY_WIRADINATA_AFL1.ShoppingCart.extractAllStoreNames() -&gt; Swift.Array&lt;Swift.String&gt;"
+                  moduleName = "0706012110013-MARCELL_JEREMY_WIRADINATA-AFL1"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/mac/Documents/XcodeProjects/0706012110013-MARCELL_JEREMY_WIRADINATA-AFL1/0706012110013-MARCELL_JEREMY_WIRADINATA-AFL1/screens/ShoppingCartScreen.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "54"
+                  endingLineNumber = "54"
+                  offsetFromSymbolStart = "326">
+               </Location>
+               <Location
+                  uuid = "C307353C-2973-4A15-9AFE-FCEF88E3FF67 - bff53195d359de83"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "_706012110013_MARCELL_JEREMY_WIRADINATA_AFL1.ShoppingCart.extractAllStoreNames() -&gt; Swift.Array&lt;Swift.String&gt;"
+                  moduleName = "0706012110013-MARCELL_JEREMY_WIRADINATA-AFL1"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/mac/Documents/XcodeProjects/0706012110013-MARCELL_JEREMY_WIRADINATA-AFL1/0706012110013-MARCELL_JEREMY_WIRADINATA-AFL1/screens/ShoppingCartScreen.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "54"
+                  endingLineNumber = "54"
+                  offsetFromSymbolStart = "250">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "18E54B87-805B-4510-98D5-61B742AB339B"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "0706012110013-MARCELL_JEREMY_WIRADINATA-AFL1/screens/ShoppingCartScreen.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "56"
+            endingLineNumber = "56"
+            landmarkName = "extractAllStoreNames()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "F3E4CE70-EF5F-4648-85B5-5A6CFFB4F6A8"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "0706012110013-MARCELL_JEREMY_WIRADINATA-AFL1/screens/ShoppingCartScreen.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "55"
+            endingLineNumber = "55"
+            landmarkName = "extractAllStoreNames()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "F3E4CE70-EF5F-4648-85B5-5A6CFFB4F6A8 - bff53195d359df49"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "_706012110013_MARCELL_JEREMY_WIRADINATA_AFL1.ShoppingCart.extractAllStoreNames() -&gt; Swift.Array&lt;Swift.String&gt;"
+                  moduleName = "0706012110013-MARCELL_JEREMY_WIRADINATA-AFL1"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/mac/Documents/XcodeProjects/0706012110013-MARCELL_JEREMY_WIRADINATA-AFL1/0706012110013-MARCELL_JEREMY_WIRADINATA-AFL1/screens/ShoppingCartScreen.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "60"
+                  endingLineNumber = "60"
+                  offsetFromSymbolStart = "476">
+               </Location>
+               <Location
+                  uuid = "F3E4CE70-EF5F-4648-85B5-5A6CFFB4F6A8 - bff53195d359dea2"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "_706012110013_MARCELL_JEREMY_WIRADINATA_AFL1.ShoppingCart.extractAllStoreNames() -&gt; Swift.Array&lt;Swift.String&gt;"
+                  moduleName = "0706012110013-MARCELL_JEREMY_WIRADINATA-AFL1"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/mac/Documents/XcodeProjects/0706012110013-MARCELL_JEREMY_WIRADINATA-AFL1/0706012110013-MARCELL_JEREMY_WIRADINATA-AFL1/screens/ShoppingCartScreen.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "55"
+                  endingLineNumber = "55"
+                  offsetFromSymbolStart = "408">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "4A6D46F4-85E3-41C7-B76E-A9322DFBE173"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "0706012110013-MARCELL_JEREMY_WIRADINATA-AFL1/screens/ShoppingCartScreen.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "54"
+            endingLineNumber = "54"
+            landmarkName = "extractAllStoreNames()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "4A6D46F4-85E3-41C7-B76E-A9322DFBE173 - bff53195d359df49"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "_706012110013_MARCELL_JEREMY_WIRADINATA_AFL1.ShoppingCart.extractAllStoreNames() -&gt; Swift.Array&lt;Swift.String&gt;"
+                  moduleName = "0706012110013-MARCELL_JEREMY_WIRADINATA-AFL1"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/mac/Documents/XcodeProjects/0706012110013-MARCELL_JEREMY_WIRADINATA-AFL1/0706012110013-MARCELL_JEREMY_WIRADINATA-AFL1/screens/ShoppingCartScreen.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "60"
+                  endingLineNumber = "60"
+                  offsetFromSymbolStart = "476">
+               </Location>
+               <Location
+                  uuid = "4A6D46F4-85E3-41C7-B76E-A9322DFBE173 - bff53195d359de83"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "_706012110013_MARCELL_JEREMY_WIRADINATA_AFL1.ShoppingCart.extractAllStoreNames() -&gt; Swift.Array&lt;Swift.String&gt;"
+                  moduleName = "0706012110013-MARCELL_JEREMY_WIRADINATA-AFL1"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/mac/Documents/XcodeProjects/0706012110013-MARCELL_JEREMY_WIRADINATA-AFL1/0706012110013-MARCELL_JEREMY_WIRADINATA-AFL1/screens/ShoppingCartScreen.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "54"
+                  endingLineNumber = "54"
+                  offsetFromSymbolStart = "250">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "E09BCA1A-E287-4F00-9507-F364EAAB30E5"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "0706012110013-MARCELL_JEREMY_WIRADINATA-AFL1/screens/ShoppingCartScreen.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "48"
+            endingLineNumber = "48"
+            landmarkName = "extractAllStoreNames()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "DE2A6D26-88DB-4C67-8C04-741E4448BA13"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "0706012110013-MARCELL_JEREMY_WIRADINATA-AFL1/screens/ShoppingCartScreen.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "50"
+            endingLineNumber = "50"
+            landmarkName = "extractAllStoreNames()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "F5CC0E6C-0E0B-4B93-ABFD-8A9037227C15"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "0706012110013-MARCELL_JEREMY_WIRADINATA-AFL1/screens/ShoppingCartScreen.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "60"
+            endingLineNumber = "60"
+            landmarkName = "extractAllStoreNames()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "F5CC0E6C-0E0B-4B93-ABFD-8A9037227C15 - 6d87beac83e3946b"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "_706012110013_MARCELL_JEREMY_WIRADINATA_AFL1.ShoppingCart.printScreen() -&gt; ()"
+                  moduleName = "0706012110013-MARCELL_JEREMY_WIRADINATA-AFL1"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/mac/Documents/XcodeProjects/0706012110013-MARCELL_JEREMY_WIRADINATA-AFL1/0706012110013-MARCELL_JEREMY_WIRADINATA-AFL1/screens/ShoppingCartScreen.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "67"
+                  endingLineNumber = "67"
+                  offsetFromSymbolStart = "178">
+               </Location>
+               <Location
+                  uuid = "F5CC0E6C-0E0B-4B93-ABFD-8A9037227C15 - bff53195d359df49"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "_706012110013_MARCELL_JEREMY_WIRADINATA_AFL1.ShoppingCart.extractAllStoreNames() -&gt; Swift.Array&lt;Swift.String&gt;"
+                  moduleName = "0706012110013-MARCELL_JEREMY_WIRADINATA-AFL1"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/mac/Documents/XcodeProjects/0706012110013-MARCELL_JEREMY_WIRADINATA-AFL1/0706012110013-MARCELL_JEREMY_WIRADINATA-AFL1/screens/ShoppingCartScreen.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "60"
+                  endingLineNumber = "60"
+                  offsetFromSymbolStart = "476">
+               </Location>
+            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>

@@ -39,7 +39,7 @@ class Cafeteria {
 extension Cafeteria: OnePrintScreen {
     func printScreen() {
         
-        var theCafeteriaMenu = currentStore.menuList
+        let theCafeteriaMenu = currentStore.menuList
         var cafeteriaChoice: String? = "blank"
         
     //    print(rawCafeteria["Donat Coklat"] ?? "I can't find it")

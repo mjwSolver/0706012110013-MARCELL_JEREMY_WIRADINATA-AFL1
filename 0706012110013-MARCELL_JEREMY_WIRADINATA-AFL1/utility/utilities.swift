@@ -29,9 +29,9 @@ func filterAllStoresBy(Store storeName:String) -> [[String:Int]:String] {
     return THE_MENU.filter{ $0.value == storeName}
 }
 
-func filterShoppingCartBy(Store storeName:String)->[[String:Int]:String] {
-    return THE_SHOPPING_CART.filter{ $0.value == storeName }
-}
+//func filterShoppingCartBy(Store storeName:String)->[[String:Int]:String] {
+//    return THE_SHOPPING_CART.filter{ $0.value == storeName }
+//}
 
 //func convertToArray(from theDict:[String:Int]){
 //    let one = Array(theDict.keys)

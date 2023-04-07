@@ -62,23 +62,26 @@ extension Order : OnePrintScreen {
                 print("Thank you for ordering!")
                 print("")
                 
+                
                 // Do we store everything then we aggregate everything later at checkout?
 //                var theCartItem = CartItem(menuItem: theMenuItem, quantity: amountAsNumber)
 //                TheShoppingCart.contents.append(theCartItem)
 
                 // Do we find a similar Item and then increment it's quantity?
-                var theCartItem = CartItem(
+                let theCartItem = CartItem(
                     menuItem: theMenuItem,
                     quantity: amountAsNumber,
                     storeName: storeName)
                 
                 if !TheShoppingCart.isSimilarItemInCartOf(id: theMenuItem.id) {
                     TheShoppingCart.contents.append(theCartItem)
+                    break outerloop
                 }
                 
-                var similarItemIndex = TheShoppingCart.retrieveItemInCart(id: theMenuItem.id)
+                let similarItemIndex = TheShoppingCart.retrieveItemInCart(id: theMenuItem.id)
                 if similarItemIndex == -1 {
                     print(" No Similar Item found, duplicate ID?")
+                    break outerloop
                 }
                 
                 TheShoppingCart.contents[similarItemIndex].IncrementQuantity(amount: theCartItem.quantity)
