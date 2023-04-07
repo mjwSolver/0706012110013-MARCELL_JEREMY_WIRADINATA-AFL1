@@ -77,12 +77,18 @@ extension ShoppingCart: OnePrintScreen {
         
         let allStores = extractAllStoreNames()
 
+        print("""
+            \n
+            =========
+            YOUR BILL
+            =========
+            """)
         for theStore in allStores {
             let theCartsItems = contents.filter { $0.storeName == theStore }
             
-            print("Your Order from \(theStore)")
+            print("\nYour Order from \(theStore)")
             for cartItem in theCartsItems {
-                print("- \(cartItem.name) x \(cartItem.quantity) = \(cartItem.price * cartItem.quantity)")
+                print(" - \(cartItem.name) x \(cartItem.quantity) = \(cartItem.price * cartItem.quantity)")
             }
 
         }
